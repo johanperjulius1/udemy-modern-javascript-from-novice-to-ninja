@@ -39,31 +39,64 @@
 // console.log(lastName);
 // ------------------------------------------------------
 
-// Numbers
+// // Numbers
 
-let radius = 20;
-const pi = 3.14;
-let area = radius * radius * pi;
-let circumference = 2 * radius * pi;
+// let radius = 20;
+// const pi = 3.14;
+// let area = radius * radius * pi;
+// let circumference = 2 * radius * pi;
 
-console.log(`Här kommer en hälsning från area: ${area} cm`);
-console.log(
-  `Här kommer en annan hälsning från omkrets: ${Math.round(circumference)} cm`
-);
+// console.log(`Här kommer en hälsning från area: ${area} cm`);
+// console.log(
+//   `Här kommer en annan hälsning från omkrets: ${Math.round(circumference)} cm`
+// );
 
-let likes = 100;
+// let likes = 100;
 
-// likes = ++ likes;
-likes++;
-likes--
---likes
-likes = -- likes
-likes =- likes
-likes -= likes
-likes +=10
-likes /= 2
-likes *=20
-likes = likes + 1
-console.log(likes);
+// // likes = ++ likes;
+// likes++;
+// likes--
+// --likes
+// likes = -- likes
+// likes =- likes
+// likes -= likes
+// likes +=10
+// likes /= 2
+// likes *=20
+// likes = likes + 1
+// console.log(likes);
 
-console.log( 'hello'.toUpperCase())
+// console.log( 'hello'.toUpperCase())
+
+// -----------------------------------------------------
+
+// // 2.13 Arrays
+
+// let ninjas = ["Johan", "Eric", "Charlie"];
+// ninjas[1] = "Fabian";
+// console.log(ninjas[1]);
+// console.log(ninjas.length);
+// let joined = ninjas.join(",");
+// console.log(joined);
+
+// // concating one array with another:
+
+// let concattedArrays = ninjas.concat(["Barbie", "Ken"]);
+// console.log(concattedArrays);
+// concattedArrays.push("MaBro");
+// console.log(concattedArrays);
+// concattedArrays.unshift("MaSis");
+// console.log(concattedArrays);
+
+
+// -----------------------------------------------------------
+
+// // 2.15 Booleans & comparison
+let name = "shaun";
+
+console.log(name == 'shaun')
+console.log(name == 'Shaun')
+console.log(name > 'crystal')
+console.log(name > 'Shaun')
+console.log(name > 'Crystal')
+
