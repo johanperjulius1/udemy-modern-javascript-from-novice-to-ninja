@@ -92,11 +92,26 @@
 // -----------------------------------------------------------
 
 // // 2.15 Booleans & comparison
-let name = "shaun";
+// let name = "shaun";
 
-console.log(name == 'shaun')
-console.log(name == 'Shaun')
-console.log(name > 'crystal')
-console.log(name > 'Shaun')
-console.log(name > 'Crystal')
+// console.log(name == 'shaun')
+// console.log(name == 'Shaun')
+// console.log(name > 'crystal')
+// console.log(name > 'Shaun')
+// console.log(name > 'Crystal')
 
+// -----------------------------------------------------------
+
+// // 2.17 Type conversion
+
+// let score = 100
+// score = String(score)
+// console.log(score + 1)
+// console.log(typeof score)
+// score = Number(score)
+// console.log(typeof(score))
+// console.log(Boolean(''))
+// console.log(Boolean('hej'))
+// console.log(Boolean(0))
+// console.log(Boolean(-1))
+// console.log(Boolean(1))
