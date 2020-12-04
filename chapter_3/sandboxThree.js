@@ -64,28 +64,39 @@
 
 // // 3.22 Else and else if
 
-password = 'Grävlingen'
+// password = 'Grävlingen'
 
-if (password.length > 4) {
-  console.log('long enough')
+// if (password.length > 4) {
+//   console.log('long enough')
+// } else {
+//   console.log('not long enough')
+// }
+
+// password = 'Grä'
+
+// if (password.length > 4) {
+//   console.log('long enough')
+// } else {
+//   console.log('not long enough')
+// }
+
+// password = 'hejad'
+
+// if(password.length < 4) {
+//   console.log('that password is so weak bruh')
+// } else if(password.length < 8) {
+//   console.log('still not enough bruh')
+// } else {
+//   console.log("wow bruh, you're a ninja")
+// }
+
+// // 3.24 logical operators.
+const password = "pissdjkejldej"
+
+if(password.length >= 12 && password.includes('@')){
+  console.log('hello there')
+} else if(password.length >= 12 || !password.includes('@') && password.length >= 6) {
+  console.log("You're just missing the @ bru")
 } else {
-  console.log('not long enough')
-}
-
-password = 'Grä'
-
-if (password.length > 4) {
-  console.log('long enough')
-} else {
-  console.log('not long enough')
-}
-
-password = 'hejad'
-
-if(password.length < 4) {
-  console.log('that password is so weak bruh')
-} else if(password.length < 8) {
-  console.log('still not enough bruh')
-} else {
-  console.log("wow bruh, you're a ninja")
+  console.log('you plainly suck')
 }
