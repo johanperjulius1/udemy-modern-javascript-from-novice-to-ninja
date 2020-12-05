@@ -102,23 +102,40 @@
 
 // // 3.25 logical NOT operators.
 
-let user_logged_in =! true;
+// let user_logged_in =! true;
 
-if(user_logged_in != true) {
-  console.log("press here to login")
-} else {
-  console.log("You are my logged in favorite")
+// if(user_logged_in != true) {
+//   console.log("press here to login")
+// } else {
+//   console.log("You are my logged in favorite")
+// }
+
+// let user = false
+// if(!user) {
+//   console.log("you must log in to continue")
+// }
+
+// let user2 = true
+// if(user2) {
+//   console.log("you must log in to continue")
+// }
+
+// console.log(!0)
+// console.log(!true)
+
+// // 3.26 Break and continue
+
+score = [5, 25, 0, 100, 32, 36]
+
+for (let i = 0; i < score.length; i++) {
+  if(score[i]===0){
+    console.log('beep')
+    continue
+  }
+
+  console.log(score[i])
+  if(score[i]===100){
+    console.log('Congrats my friend, you reached maximum score so now we stop playing.')
+    break
+  }
 }
-
-let user = false
-if(!user) {
-  console.log("you must log in to continue")
-}
-
-let user2 = true
-if(user2) {
-  console.log("you must log in to continue")
-}
-
-console.log(!0)
-console.log(!true)
