@@ -33,7 +33,6 @@
 
 // // 3.21 Do While loops
 
-
 // let i = 10;
 
 //  do {
@@ -91,12 +90,35 @@
 // }
 
 // // 3.24 logical operators.
-const password = "pissdjkejldej"
+// const password = "pissdjkejldej"
 
-if(password.length >= 12 && password.includes('@')){
-  console.log('hello there')
-} else if(password.length >= 12 || !password.includes('@') && password.length >= 6) {
-  console.log("You're just missing the @ bru")
+// if(password.length >= 12 && password.includes('@')){
+//   console.log('hello there')
+// } else if(password.length >= 12 || !password.includes('@') && password.length >= 6) {
+//   console.log("You're just missing the @ bru")
+// } else {
+//   console.log('you plainly suck')
+// }
+
+// // 3.25 logical NOT operators.
+
+let user_logged_in =! true;
+
+if(user_logged_in != true) {
+  console.log("press here to login")
 } else {
-  console.log('you plainly suck')
+  console.log("You are my logged in favorite")
 }
+
+let user = false
+if(!user) {
+  console.log("you must log in to continue")
+}
+
+let user2 = true
+if(user2) {
+  console.log("you must log in to continue")
+}
+
+console.log(!0)
+console.log(!true)
