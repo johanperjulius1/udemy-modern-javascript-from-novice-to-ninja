@@ -125,17 +125,41 @@
 
 // // 3.26 Break and continue
 
-score = [5, 25, 0, 100, 32, 36]
+// score = [5, 25, 0, 100, 32, 36]
 
-for (let i = 0; i < score.length; i++) {
-  if(score[i]===0){
-    console.log('beep')
-    continue
-  }
+// for (let i = 0; i < score.length; i++) {
+//   if(score[i]===0){
+//     console.log('beep')
+//     continue
+//   }
 
-  console.log(score[i])
-  if(score[i]===100){
-    console.log('Congrats my friend, you reached maximum score so now we stop playing.')
+//   console.log(score[i])
+//   if(score[i]===100){
+//     console.log('Congrats my friend, you reached maximum score so now we stop playing.')
+//     break
+//   }
+// }
+
+// // 3.27 Switch statements
+
+const grade = "B";
+
+switch (grade) {
+  case "A":
+    console.log("I got an A!");
     break
-  }
+  case "B":
+    console.log("I got a B!");
+    break
+  case "C":
+    console.log("I got a C!");
+    break
+  case "D":
+    console.log("I got a D!");
+    break
+  case "E":
+    console.log("I got an E!");
+    break
+  default:
+    console.log('I got an F')
 }
