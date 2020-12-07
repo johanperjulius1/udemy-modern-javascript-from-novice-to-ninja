@@ -142,24 +142,42 @@
 
 // // 3.27 Switch statements
 
-const grade = "B";
+// const grade = "B";
 
-switch (grade) {
-  case "A":
-    console.log("I got an A!");
-    break
-  case "B":
-    console.log("I got a B!");
-    break
-  case "C":
-    console.log("I got a C!");
-    break
-  case "D":
-    console.log("I got a D!");
-    break
-  case "E":
-    console.log("I got an E!");
-    break
-  default:
-    console.log('I got an F')
+// switch (grade) {
+//   case "A":
+//     console.log("I got an A!");
+//     break
+//   case "B":
+//     console.log("I got a B!");
+//     break
+//   case "C":
+//     console.log("I got a C!");
+//     break
+//   case "D":
+//     console.log("I got a D!");
+//     break
+//   case "E":
+//     console.log("I got an E!");
+//     break
+//   default:
+//     console.log('I got an F')
+// }
+
+
+// // 3.28 Variables and block scope
+
+// const age = 10
+console.log(`globally the age is ${age}`)
+
+if(true){
+  const age = 20
+  console.log('inside the first code block the age is: ', age )
+
+  if(true){
+    const age = 100
+    console.log('Inside the nested code block the age is : ', age)
+  }
 }
+
+console.log(age)
