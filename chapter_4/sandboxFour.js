@@ -61,16 +61,33 @@
 //   console.log(value);
 // });
 
-let dogs = ["tax", "collier", "werewolf"];
+// let dogs = ["tax", "collier", "werewolf"];
 
-dogs.forEach((index, dog) => {
-  console.log(index, dog);
+// dogs.forEach((index, dog) => {
+//   console.log(index, dog);
+// });
+
+// // or
+
+// logDog = (index, dog) => {
+//   console.log(index, dog);
+// };
+
+// dogs.forEach(logDog);
+
+// 4.36 Callback functions in Action
+
+const ul = document.querySelector(".people");
+
+const people = ["Johan","Jacob","Caroline"];
+
+let html = ``;
+
+people.forEach( person => {
+  // create html template
+  html += `<li style="color: purple">${person}</li>`;
 });
 
-// or
+console.log(html);
+ul.innerHTML = html;
 
-logDog = (index, dog) => {
-  console.log(index, dog);
-};
-
-dogs.forEach(logDog);
