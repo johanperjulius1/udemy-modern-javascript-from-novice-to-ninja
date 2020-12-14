@@ -32,19 +32,45 @@
 
 // // 4.33 Arrow function
 
-const calcArea = radius => 3.14 * radius ** 2;
-const area = calcArea(5);
-console.log('Area is: ', calcArea(100))
+// const calcArea = radius => 3.14 * radius ** 2;
+// const area = calcArea(5);
+// console.log('Area is: ', calcArea(100))
 
-const greet = () => 'hello johan';
-console.log(greet())
+// const greet = () => 'hello johan';
+// console.log(greet())
 
-const bill = (products, tax) => {
-  let total = 0;
-  for(let i = 0; i < products.length; i++){
-    total += products[i] + products[i] * tax;
-  }
-  return total
-}
+// const bill = (products, tax) => {
+//   let total = 0;
+//   for(let i = 0; i < products.length; i++){
+//     total += products[i] + products[i] * tax;
+//   }
+//   return total
+// }
 
-console.log(bill([10000, 15, 30], 0.10))
+// console.log(bill([10000, 15, 30], 0.10))
+
+// // 4.35 Foreach Method & Callbacks
+
+// const myFunc = (callbackFunc) => {
+//   // do something
+//   let value = 50;
+//   callbackFunc(value);
+// };
+
+// myFunc(function (value) {
+//   console.log(value);
+// });
+
+let dogs = ["tax", "collier", "werewolf"];
+
+dogs.forEach((index, dog) => {
+  console.log(index, dog);
+});
+
+// or
+
+logDog = (index, dog) => {
+  console.log(index, dog);
+};
+
+dogs.forEach(logDog);
