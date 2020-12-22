@@ -49,3 +49,17 @@
 // myGirls.forEach((girl) => {
 //   div.innerHTML += `<p>${girl}</p>`;
 // });
+//---------------------------------------------------------
+// // 6.49
+
+const link = document.querySelector("a");
+console.log(link.getAttribute("href"));
+
+link.setAttribute('href', 'https://www.codecademy.com/')
+link.innerText = 'Codeacademy.com'
+
+const msg = document.querySelector('p')
+console.log(msg.getAttribute('class'))
+msg.setAttribute('class', 'johan')
+console.log(msg.getAttribute('class'))
+msg.setAttribute('style', 'color: pink')
