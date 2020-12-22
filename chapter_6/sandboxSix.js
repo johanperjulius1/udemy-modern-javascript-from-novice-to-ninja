@@ -28,3 +28,24 @@
 // const tags = document.getElementsByTagName("p");
 // console.log(tags);
 // console.log(tags[1]);
+
+// // 6.48
+// const appar = document.querySelector("p");
+// console.log(appar.innerText);
+// appar.innerText = "Jag älskar min farsa!!";
+// console.log(appar.innerText);
+// const apparna = document.querySelectorAll("div");
+
+// apparna.forEach((apor) => {
+//   console.log(apor.innerHTML);
+// });
+
+// appar.innerHTML+= "<h1>Jag älskar min farsa!!</h2>";
+
+// const div = document.querySelector("div");
+
+// myGirls = ['Anna', 'Lisa', 'Therese'];
+
+// myGirls.forEach((girl) => {
+//   div.innerHTML += `<p>${girl}</p>`;
+// });
