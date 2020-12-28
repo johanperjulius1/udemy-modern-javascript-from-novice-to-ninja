@@ -66,8 +66,19 @@
 
 //---------------------------------------------------------
 
-const title = document.querySelector("h1");
-title.setAttribute("style", "background-color: black");
-console.log(title.style);
-title.style.color = "orange";
-title.style.margin="50px"
+// // 6.50
+
+// const title = document.querySelector("h1");
+// title.setAttribute("style", "background-color: black");
+// console.log(title.style);
+// title.style.color = "orange";
+// title.style.margin="50px"
+//---------------------------------------------------------
+
+// // 6.51 Adding and removing classes
+
+const content = document.querySelector('p')
+console.log(content.classList)
+content.classList.add('new')
+content.classList.remove('new')
+content.classList.add('old')
