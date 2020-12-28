@@ -1,18 +1,20 @@
-.old {
-  background-color: red;
-  color: yellow;
-  margin-top: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
-  border: 1px dotted black;
+li {
+  list-style-type: none;
+  max-width: 20%;
+  padding: 2%;
+  margin: 4% auto;
+  background: #eee;
+  border: dotted #ddd;
+  text-align: center;
 }
 
-.new {
-  background-color: green;
-  color: orange;
-  margin-top: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
-  border: 4px dotted pink;
+.strikeThrough {
+  list-style-type: none;
+  max-width: 20%;
+  padding: 2%;
+  margin: 4% auto;
+  background: #eee;
+  border: dotted #ddd;
+  text-align: center;text-decoration: line-through;
 
 }
