@@ -1,0 +1,18 @@
+.old {
+  background-color: red;
+  color: yellow;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1px dotted black;
+}
+
+.new {
+  background-color: green;
+  color: orange;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 4px dotted pink;
+
+}
