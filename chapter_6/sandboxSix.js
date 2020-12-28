@@ -82,3 +82,16 @@ console.log(content.classList)
 content.classList.add('new')
 content.classList.remove('new')
 content.classList.add('old')
+
+
+const kistan = document.querySelectorAll('p')
+
+kistan.forEach( person => {
+  if(person.textContent.includes('bäst')){
+    person.classList.toggle('new')
+  }
+
+  if(person.textContent.includes('bra')){
+    person.classList.toggle('old')
+  }
+})
