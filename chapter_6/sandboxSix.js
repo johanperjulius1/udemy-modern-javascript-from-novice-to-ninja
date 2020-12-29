@@ -95,6 +95,8 @@
 //   }
 // })
 
+//---------------------------------------------------------
+
 // // 6.52 Parents, Children & Siblings
 
 // const article = document.querySelector("article");
@@ -111,6 +113,8 @@
 // console.log(title.previousElementSibling);
 
 // console.log(title.nextElementSibling.parentElement.children);
+
+//---------------------------------------------------------
 
 // // 6.53 Event Basics
 
@@ -130,7 +134,29 @@
 //   });
 // });
 
+//---------------------------------------------------------
+
 // // 6.54 Creating & Removing elements
+
+// const ul = document.querySelector("ul");
+// const button = document.querySelector("button");
+// const items = document.querySelectorAll("li");
+
+// button.addEventListener("click", () => {
+//   const li = document.createElement("li");
+//   li.textContent = "something new to do";
+//   ul.prepend(li);
+// });
+
+// items.forEach((item) => {
+//   item.addEventListener("click", (e) => {
+//     e.target.remove();
+//   });
+// });
+
+//---------------------------------------------------------
+
+// // 6.55 Event bubbling and delegation
 
 const ul = document.querySelector("ul");
 const button = document.querySelector("button");
@@ -142,8 +168,16 @@ button.addEventListener("click", () => {
   ul.prepend(li);
 });
 
-items.forEach((item) => {
-  item.addEventListener("click", (e) => {
+// items.forEach((item) => {
+//   item.addEventListener("click", (e) => {
+//     console.log("event in LI");
+//     e.target.remove();
+//     e.stopPropagation();
+//   });
+// });
+
+ul.addEventListener("click", (e) => {
+  if (e.target.tagName === "LI") {
     e.target.remove();
-  });
+  }
 });
