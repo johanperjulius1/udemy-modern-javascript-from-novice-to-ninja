@@ -112,11 +112,13 @@
 
 // console.log(title.nextElementSibling.parentElement.children);
 
-// const button = document.querySelector("button");
+// // 6.53 Event Basics
 
-// button.addEventListener('click', () =>{
-//   console.log('you clicked me!!')
-// })
+const button = document.querySelector("button");
+
+button.addEventListener('click', () =>{
+  console.log('you clicked me!!')
+})
 
 const items = document.querySelectorAll("li");
 items.forEach((item) => {
