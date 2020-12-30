@@ -185,20 +185,39 @@
 
 // // 6.56 More DOM Events
 
-const copyMe = document.querySelector(".copy-me");
+// const copyMe = document.querySelector(".copy-me");
 
-copyMe.addEventListener("copy", () => {
-  alert("you copied my content.");
+// copyMe.addEventListener("copy", () => {
+//   alert("you copied my content.");
+// });
+
+// const mouseMove = document.querySelector(".box");
+
+// mouseMove.addEventListener("mousemove", (e) => {
+//   // console.log(e.offsetX, e.offsetY);
+//   mouseMove.textContent = ` x position is ${e.offsetX} -
+//   y position is ${e.offsetY}`;
+// });
+
+// document.addEventListener("wheel", (e) => {
+//   console.log(e.pageX, e.pageY);
+// });
+
+//---------------------------------------------------------
+
+// // 6.57 Building a pop-up
+
+const button = document.querySelector("button");
+const popupWrapper = document.querySelector(".popup-wrapper");
+const popupClose = document.querySelector(".popup-close");
+button.addEventListener("click", () => {
+  popupWrapper.style.display = "block";
 });
 
-const mouseMove = document.querySelector(".box");
-
-mouseMove.addEventListener("mousemove", (e) => {
-  // console.log(e.offsetX, e.offsetY);
-  mouseMove.textContent = ` x position is ${e.offsetX} -
-  y position is ${e.offsetY}`;
+popupClose.addEventListener("click", () => {
+  popupWrapper.style.display = "none";
 });
 
-document.addEventListener("wheel", (e) => {
-  console.log(e.pageX, e.pageY);
-});
+popupWrapper.addEventListener("click", () => {
+  popupWrapper.style.display = "none";
+})
