@@ -158,26 +158,47 @@
 
 // // 6.55 Event bubbling and delegation
 
-const ul = document.querySelector("ul");
-const button = document.querySelector("button");
-const items = document.querySelectorAll("li");
+// const ul = document.querySelector("ul");
+// const button = document.querySelector("button");
+// const items = document.querySelectorAll("li");
 
-button.addEventListener("click", () => {
-  const li = document.createElement("li");
-  li.textContent = "something new to do";
-  ul.prepend(li);
-});
-
-// items.forEach((item) => {
-//   item.addEventListener("click", (e) => {
-//     console.log("event in LI");
-//     e.target.remove();
-//     e.stopPropagation();
-//   });
+// button.addEventListener("click", () => {
+//   const li = document.createElement("li");
+//   li.textContent = "something new to do";
+//   ul.prepend(li);
 // });
 
-ul.addEventListener("click", (e) => {
-  if (e.target.tagName === "LI") {
-    e.target.remove();
-  }
+// // items.forEach((item) => {
+// //   item.addEventListener("click", (e) => {
+// //     console.log("event in LI");
+// //     e.target.remove();
+// //     e.stopPropagation();
+// //   });
+// // });
+
+// ul.addEventListener("click", (e) => {
+//   if (e.target.tagName === "LI") {
+//     e.target.remove();
+//   }
+// });
+//---------------------------------------------------------
+
+// // 6.56 More DOM Events
+
+const copyMe = document.querySelector(".copy-me");
+
+copyMe.addEventListener("copy", () => {
+  alert("you copied my content.");
+});
+
+const mouseMove = document.querySelector(".box");
+
+mouseMove.addEventListener("mousemove", (e) => {
+  // console.log(e.offsetX, e.offsetY);
+  mouseMove.textContent = ` x position is ${e.offsetX} -
+  y position is ${e.offsetY}`;
+});
+
+document.addEventListener("wheel", (e) => {
+  console.log(e.pageX, e.pageY);
 });
