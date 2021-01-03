@@ -1,8 +1,35 @@
-const form = document.querySelector(".signup-form");
-const username = document.querySelector('#username')
+// 7.59 Submit events
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  // console.log(username.value)
-  console.log(form.username.value)
-});
+// const form = document.querySelector(".signup-form");
+// const username = document.querySelector('#username')
+
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   // console.log(username.value)
+//   console.log(form.username.value)
+// });
+
+// // 7.61 Testing regex patterns
+
+// const form = document.querySelector(".signup-form");
+
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   console.log(form.username.value);
+// });
+
+// testing Regex
+const username = "@_shaunp_";
+const pattern = /[a-z]{6,}/;
+
+// let result = pattern.test(username);
+// console.log(result);
+
+// if (result) {
+//   console.log("regex test passed :)");
+// } else{
+//   console.log('regex test failed :(')
+// }
+
+let result = username.search(pattern);
+console.log(result);
