@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="chapter_7/styles.css"">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -49,13 +50,56 @@
       </div>
     </div>
   </div> -->
-  <form class="signup-form">
+  <!-- <form class="signup-form">
     <input type="text" id="username" placeholder="put your username here...">
     <input type="submit" id="submit" value="submit">
     <div class="feedback"></div>
-  </form>
+  </form>-->
 
-  <script src="./chapter_7/sandboxSeven.js"></script>
-  </body>
+  <div class="intro py-3 bg-white text-center">
+    <div class="container">
+      <h2 class="text-primary display-3 my-4">Super Coder Quiz</h2>
+    </div>
+  </div>
+
+  <div class="quiz py-4 bg-primary">
+    <div class="container">
+      <h2 class="my-5 text-white">Here comes the questions...</h2>
+
+      <form class="quiz-form text-light">
+        <div class="my-5">
+          <p class="lead font-weight-normal">
+            1. Do you love to code?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="A" checked>
+            <label class="form-check-label">Yes, I do!</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="B">
+            <label class="form-check-label">Not yet, but I will!</label>
+          </div>
+        </div>
+      </form>
+      <form class="quiz-form text-light">
+        <div class="my-5">
+          <p class="lead font-weight-normal">
+            2. Have you run a marathon?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="A" checked>
+            <label class="form-check-label">Yes, I have!</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="B">
+            <label class="form-check-label">My legs don't work, they just make it worse</label>
+          </div>
+        </div>
+        <div class="text-cente">
+          <input type="submit" clas="btn btn-light">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./chapter_8/sandboxEight.js"></script>
+</body>
 
 </html>
