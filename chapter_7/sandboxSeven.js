@@ -42,7 +42,7 @@ const usernamePattern = /^[a-zA-Z]{6,12}$/;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const username = e.target.value;
+  const username = form.username.value;
   let result = usernamePattern.test(username);
   if (result) {
     feedback.textContent = "username is great";
