@@ -24,3 +24,7 @@ h3 {
   text-decoration: ;
   ;
 }
+
+.filtered{
+  display: none !important;
+}
