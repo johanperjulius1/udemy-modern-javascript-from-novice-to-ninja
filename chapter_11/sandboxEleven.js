@@ -1,44 +1,61 @@
 // // 11.82 Dates & Times in JavaScript
 
+// const now = new Date();
+
+// console.log("Här kommer nu:", now);
+// console.log(typeof now);
+
+// const monthsOfYear = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+// const daysOfWeek = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+// ];
+
+// // year, months, day, times
+// console.log("Här kommer helår: ", now.getFullYear());
+// console.log("Här kommer innevarande månad: ", monthsOfYear[now.getMonth()]);
+// console.log("Här kommer dagens veckodag: ", daysOfWeek[now.getDay()]);
+// console.log("Här kommer innevarande klockslag för timme: ", now.getHours());
+
+// // timestamp
+// console.log("timestamp: ", now.getTime());
+
+// console.log(now.toDateString());
+// console.log(now.toTimeString());
+// console.log(now.toLocaleDateString());
+// console.log(now.toLocaleString());
+
+// // 11.83 Timestamps & Comparisons
+
+const before = new Date("July 10 1994 17:12:00");
 const now = new Date();
 
-console.log("Här kommer nu:", now);
-console.log(typeof now);
+console.log(now.getTime(), before.getTime());
+const ageInMilliseconds = now.getTime() - before.getTime();
+const ageInSeconds = Math.round(ageInMilliseconds / 1000);
+const ageInMins = Math.round(ageInSeconds / 60);
+const ageInHours = Math.round(ageInMins / 60);
+const ageInDays = Math.round(ageInHours / 24);
+const ageInYears = Math.round(ageInDays / 365);
 
-const monthsOfYear = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-const daysOfWeek = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
-// year, months, day, times
-console.log("Här kommer helår: ", now.getFullYear());
-console.log("Här kommer innevarande månad: ", monthsOfYear[now.getMonth()]);
-console.log("Här kommer dagens veckodag: ", daysOfWeek[now.getDay()]);
-console.log("Här kommer innevarande klockslag för timme: ", now.getHours());
-
-// timestamp
-console.log("timestamp: ", now.getTime());
-
-console.log(now.toDateString());
-console.log(now.toTimeString());
-console.log(now.toLocaleDateString());
-console.log(now.toLocaleString());
+const superstar = console.log("This SUPERSTAR was born ", ageInYears, " ago");
+const timestamp = 773853120000;
+console.log(new Date(timestamp));
