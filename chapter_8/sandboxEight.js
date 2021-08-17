@@ -4,7 +4,7 @@ form.addEventListener("submit", (e) => {
   console.log(form.q1.value);
   e.preventDefault();
   let score = 0;
-  const userAnswers = [form.q1.value, form.q2.value];
+  let userAnswers = [form.q1.value, form.q2.value];
   userAnswers.forEach((answer, index) => {
     if (answer === correctAnswers[index]) {
       score += 50;
@@ -17,11 +17,11 @@ form.addEventListener("submit", (e) => {
 
   let percentageCounter = 0;
   const timer = setInterval(() => {
-    result.querySelector("span").textContent = `${score}`;
+    result.querySelector("span").textContent = `${percentageCounter} %`;
     if (percentageCounter === score) {
       clearInterval(timer);
     } else {
-      output++;
+      percentageCounter++;
     }
-  }, 10);
+  }, 1);
 });
