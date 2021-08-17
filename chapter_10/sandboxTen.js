@@ -42,19 +42,19 @@ ul.addEventListener("click", (e) => {
 
 getValues();
 
-const filterTodos = (term) => {
+const filterTodos = (phrase) => {
   Array.from(ul.children)
-    .filter((todo) => !todo.textContent.includes(term))
+    .filter((todo) => !todo.textContent.includes(phrase))
     .forEach((todo) => {
       todo.classList.add("filtered");
     });
 
   Array.from(ul.children)
-    .filter((todo) => todo.textContent.includes(term))
+    .filter((todo) => todo.textContent.includes(phrase))
     .forEach((todo) => todo.classList.remove("filtered"));
 };
 
 search.addEventListener("keyup", () => {
-  const term = search.value.trim().toLowerCase();
-  filterTodos(term);
+  const phrase = search.value.trim().toLowerCase();
+  filterTodos(phrase);
 });

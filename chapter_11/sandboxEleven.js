@@ -66,21 +66,31 @@
 // let clock = () => { document.querySelector(".clock").innerHTML= now;}
 // setInterval(clock(), 1000);
 
-const clock = document.querySelector(".clock");
+// const clock = document.querySelector(".clock");
 
-const tick = () => {
-  const now = new Date();
+// const tick = () => {
+//   const now = new Date();
 
-  const hours = now.getHours();
-  const minutes = now.getMinutes();
-  const seconds = now.getSeconds();
+//   const hours = now.getHours();
+//   const minutes = now.getMinutes();
+//   const seconds = now.getSeconds();
 
-  const html = `
-    <span>${hours}</span> :
-    <span>${minutes}</span> :
-    <span>${seconds}</span>
-    `
-    clock.innerHTML = html
-};
+//   const html = `
+//     <span>${hours}</span> :
+//     <span>${minutes}</span> :
+//     <span>${seconds}</span>
+//     `
+//     clock.innerHTML = html
+// };
 
-setInterval(tick, 1000)
+// setInterval(tick, 1000)
+
+const now = new Date(7373773737373773);
+// console.log(dateFns.isToday(now));
+
+// formatting options
+console.log(dateFns.format(now, 'YYYY'))
+console.log(dateFns.format(now, 'MMM'))
+console.log(dateFns.format(now, 'dddd'))
+console.log(dateFns.format(now, 'Do'))
+
