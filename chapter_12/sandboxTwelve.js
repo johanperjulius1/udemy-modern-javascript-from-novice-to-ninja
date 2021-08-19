@@ -38,7 +38,11 @@ const getTodos = (resource) => {
 
 getTodos('../chapter_12/todos/mamma.json')
   .then((data) => {
-    console.log(data)
+    console.log('Promise resolved', data);
+    return getTodos('../chapter_12/todos/pappa.json');
+  })
+  .then((data) => {
+    console.log('Promise 2 resolved', data);
   })
   .catch((err) => {
     console.log(err)
