@@ -1,4 +1,4 @@
-// const getTodos = (resource, callback) => {
+  // const getTodos = (resource, callback) => {
 
 //   const request = new XMLHttpRequest();
 
